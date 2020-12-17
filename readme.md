@@ -8,4 +8,4 @@ I am not a CSS expert and most of the changes from Parole 2015 were figured out 
 ## Screenshot
 In case I change my blog theme some day and there's no screenshot to record what this theme looked like... 
 
-<img src="https://raw.githubusercontent.com/rakheshster/WPTheme-Parole2018/main/screenshot.png" alt="theme screenshot" width="300">
+<img src="https://raw.githubusercontent.com/rakheshster/WPTheme-Parole2018/main/screenshot.png" alt="theme screenshot" width="100%">
