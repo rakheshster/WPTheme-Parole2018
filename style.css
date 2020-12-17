@@ -1,0 +1,126 @@
+/*
+Theme Name:   Parole 2018
+Theme URI:    http://wpneon.com/parole-2018-wordpress-child-theme/
+Description:  Parole 2018 is a child of the Parole 2015 theme which itself is a Twenty Fifteen WordPress child theme. Parole 2018 is a clean, simple and lightweight WordPress theme, featuring a front page with a complete post archive arranged by year rather than a traditional blog flow. 
+Author:       Rakhesh Sasidharan
+Author URI:   http://rakhesh.com
+Template:     twentyfifteen
+Version:      1.0.3
+License:      GNU General Public License v2 or later
+License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+Tags: two-columns, left-sidebar, custom-menu, custom-colors, editor-style, featured-images, full-width-template, sticky-post, threaded-comments, theme-options, blog, translation-ready
+Text Domain:  parole-2018
+This theme, like WordPress, is licensed under the GPL.
+*/
+
+
+.site-main { 
+	/* I think this is the default */
+	padding-bottom: 3%; 
+}
+.post-navigation, .comments-area, .list-loop { 
+	/* No margin on the top; I changed this from the default */
+	margin-top:0 !important;
+}
+
+.site-title a {
+	text-shadow: 0 0 2px #111;
+}
+
+.entry-title a, .widecolumn h2 {
+    color: red;
+    text-decoration: none;
+    margin-left: -2px;
+    word-wrap: break-word;
+}
+
+.post-thumbnail img { width: 100%;}
+	
+.site-info {text-align: center;}
+.site-info p {margin-bottom:2%; font-size:14px;}
+
+.site-info span[role=separator] { 
+	padding: 0 0.25em 0 0.25em;
+}
+
+/**
+ * 16.4 Desktop Small 955px
+ */
+@media screen and (min-width: 59.6875em) {
+	body:before {
+		background-color: #fff;
+		box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+		content: "";
+		display: block;
+		height: 100%;
+		min-height: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 20%;
+		z-index: 0; /* Fixes flashing bug with scrolling on Safari */
+	}
+
+	.site {
+		margin: 0 auto 0 0;
+		max-width: none;
+		/* max-width: 1403px; */
+	}
+
+	.sidebar {
+		float: left;
+		margin-right: -100%;
+		max-width: 413px;
+		position: relative;
+		width: 20%;
+	}
+
+	.secondary {
+		background-color: transparent;
+		box-shadow: none;
+		display: block;
+		margin: 0;
+		padding: 0;
+	}
+
+	.site-main {
+		/* padding: 8.3333% 0; */
+		padding: 4.2% 0;
+	}
+
+	.site-content {
+		display: block;
+		float: left;
+		margin-left: 10%;
+		width: 90%;
+	}
+	
+	.pagination {
+		margin: 8.3333% 16.6666% 0;
+	}
+	
+	.hentry {
+		/* The block where all the entries are */
+		margin: 0 3% 0 12%;
+	}
+}
+
+
+.entry-comments-link:before {
+	content: '\f108';
+	display: inline-block;
+	-webkit-font-smoothing: antialiased;
+	font: normal 16px/1 'Genericons';
+	vertical-align: top;
+}
+.entry-header-list{
+    margin: 0 10%;
+    margin-bottom: 3%;}
+	
+.entry-content-list li{
+border-top: 1px solid rgba(51, 51, 51, 0.1);; padding: 0.5% 0;}
+	
+.entry-content-list{ padding: 0 10% 5% 10%; list-style:none; margin-bottom:0px;}
+.entry-content-list a {display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; padding: 5px 0;}
+.entry-content-list a h2 {  -ms-word-break: break-word; word-break: break-word; font-weight:normal;margin-right: 2%;}
+.entry-content-list a time {color: rgba( 0, 0, 4, 0.4 ); white-space: nowrap; font-size:17px; }
