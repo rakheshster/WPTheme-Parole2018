@@ -5,7 +5,7 @@ Description:  Parole 2018 is a child of the Parole 2015 theme which itself is a 
 Author:       Rakhesh Sasidharan
 Author URI:   http://rakhesh.com
 Template:     twentyfifteen
-Version:      1.0.3
+Version:      1.0.0
 License:      GNU General Public License v2 or later
 License URI:  http://www.gnu.org/licenses/gpl-2.0.html
 Tags: two-columns, left-sidebar, custom-menu, custom-colors, editor-style, featured-images, full-width-template, sticky-post, threaded-comments, theme-options, blog, translation-ready
@@ -13,12 +13,12 @@ Text Domain:  parole-2018
 This theme, like WordPress, is licensed under the GPL.
 */
 
-
 .site-main { 
-	/* I think this is the default */
+	/* This is the default */
 	padding-bottom: 3%; 
 }
-.post-navigation, .comments-area, .list-loop { 
+
+.list-loop { 
 	/* No margin on the top; I changed this from the default */
 	margin-top:0 !important;
 }
@@ -36,11 +36,23 @@ This theme, like WordPress, is licensed under the GPL.
 
 .post-thumbnail img { width: 100%;}
 	
-.site-info {text-align: center;}
-.site-info p {margin-bottom:2%; font-size:14px;}
+.site-info { text-align: center; }
+.site-info p { margin-bottom:2%; font-size:14px; }
 
 .site-info span[role=separator] { 
 	padding: 0 0.25em 0 0.25em;
+}
+
+li {
+	margin-top: 0.8em;
+}
+
+ul.entry-content-list li {
+	margin-top: 0em;
+}
+
+blockquote {
+	margin-left: 25px;
 }
 
 /**
@@ -99,12 +111,15 @@ This theme, like WordPress, is licensed under the GPL.
 		margin: 8.3333% 16.6666% 0;
 	}
 	
+	.post-navigation {
+		margin: 8.3333% 16.6666% 0;
+	}
+	
 	.hentry {
 		/* The block where all the entries are */
 		margin: 0 3% 0 12%;
 	}
 }
-
 
 .entry-comments-link:before {
 	content: '\f108';
